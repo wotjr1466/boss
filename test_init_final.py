@@ -421,7 +421,7 @@ async def task():
 			if voice_client1.is_connected() :
 				await dbLoad()
 				await client.get_channel(channel).send( '< 원한다면 언제든지! >', tts=False)
-				print("명치복구완료!")
+				print("달콤복구완료!")
 
 	while not client.is_closed():
 		
