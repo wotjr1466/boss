@@ -1485,31 +1485,31 @@ while True:
 			if message.content == '!정강이' :
 				embed = discord.Embed(
 					title = '< 와.. 여기까지 걷어찰줄이야 >'
-					color=0E0E0E
+					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!힘내' :
 				embed = discord.Embed(
 					title = '< 고마워 병주고 약이라도 줘서~ >'
-					color=a4ffff
+					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!공주야' :
 				embed = discord.Embed(
 					title = '< 오늘은 머 마시지? >'
-					color=AD8EDB
+					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!비운' :
 				embed = discord.Embed(
 					title = '< 난 안만나는거지 못만나는게 아냐~ >'
-					color=B2A535
+					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!화백' :
 				embed = discord.Embed(
 					title = '< ㅂㅍㅇㅇㅊㅇㄹ >'
-					color=484848
+					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			
