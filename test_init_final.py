@@ -1472,16 +1472,29 @@ while True:
 				await PlaySound(voice_client1, './sound/TJ' + str(resultTJ) +'.mp3')
 			if message.content == '!인중' :
 				embed = discord.Embed(
-					title = '< 인중을 치는게 자네인가? >',
+					title = '< 명치에 비하면 콧밥이네~ >',
 					color=0xffff00
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!명치' :
 				embed = discord.Embed(
-					title = '< 내 명치 돌리도!! >',
+					title = '< 꼭 그렇게 다 때려야만 했냐!! ',
 					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
+			if message.content == '!정강이' :
+				embed = discord.Embed(
+					title = '< 와.. 여기까지 걷어찰줄이야 >
+					color=000000
+					)
+				await client.get_channel(channel).send( embed=embed, tts=False)
+			if message.content == '!힘내' :
+				embed = discord.Embed(
+					title = '< 고마워 병주고 약이라도 줘서~ >
+					color=a4ffff
+					)
+				await client.get_channel(channel).send( embed=embed, tts=False)
+			
 
 
 			################ 분배 결과 출력 ################ 
