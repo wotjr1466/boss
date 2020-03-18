@@ -1485,7 +1485,7 @@ while True:
 			if message.content == '!정강이' :
 				embed = discord.Embed(
 					title = '< 와.. 여기까지 걷어찰줄이야 >'
-					color=000000
+					color=0E0E0E
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!힘내' :
