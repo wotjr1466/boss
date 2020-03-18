@@ -1494,6 +1494,24 @@ while True:
 					color=a4ffff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
+			if message.content == '!공주야' :
+				embed = discord.Embed(
+					title = '< 오늘은 머 마시지? >'
+					color=AD8EDB
+					)
+				await client.get_channel(channel).send( embed=embed, tts=False)
+			if message.content == '!비운' :
+				embed = discord.Embed(
+					title = '< 난 안만나는거지 못만나는게 아냐~ >'
+					color=B2A535
+					)
+				await client.get_channel(channel).send( embed=embed, tts=False)
+			if message.content == '!화백' :
+				embed = discord.Embed(
+					title = '< ㅂㅍㅇㅇㅊㅇㄹ >'
+					color=484848
+					)
+				await client.get_channel(channel).send( embed=embed, tts=False)
 			
 
 
