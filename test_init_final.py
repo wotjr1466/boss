@@ -1470,6 +1470,12 @@ while True:
 			if message.content == '!TJ' or message.content == '!tj' :
 				resultTJ = random.randrange(1,9)
 				await PlaySound(voice_client1, './sound/TJ' + str(resultTJ) +'.mp3')
+			if message.content == '!인중' :
+				embed = discord.Embed(
+					title = '인중을 치는게 자네인가?',
+					color=0xff00ff
+					)
+				await client.get_channel(channel).send( embed=embed, tts=False)
 
 
 			################ 분배 결과 출력 ################ 
