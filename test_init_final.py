@@ -420,7 +420,7 @@ async def task():
 			voice_client1 = await client.get_channel(basicSetting[6]).connect(reconnect=True)
 			if voice_client1.is_connected() :
 				await dbLoad()
-				await client.get_channel(channel).send( '< 때맀다 이거제?! >', tts=False)
+				await client.get_channel(channel).send( '< 원한다면 언제든지! >', tts=False)
 				print("명치복구완료!")
 
 	while not client.is_closed():
@@ -1472,7 +1472,13 @@ while True:
 				await PlaySound(voice_client1, './sound/TJ' + str(resultTJ) +'.mp3')
 			if message.content == '!인중' :
 				embed = discord.Embed(
-					title = '인중을 치는게 자네인가?',
+					title = '< 인중을 치는게 자네인가? >',
+					color=0xffff00
+					)
+				await client.get_channel(channel).send( embed=embed, tts=False)
+			if message.content == '!명치' :
+				embed = discord.Embed(
+					title = '< 내 명치 돌리도!! >',
 					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
@@ -1511,7 +1517,7 @@ while True:
 				command_list += command[4] + '\n'     #!소환
 				command_list += command[5] + '\n'     #!불러오기
 				command_list += command[6] + '\n'     #!초기화
-				command_list += command[7] + '\n'     #!명치
+				command_list += command[7] + '\n'     #!달콤
 				command_list += command[8] + '\n'     #!재시작
 				command_list += command[9] + '\n'     #!미예약
 				command_list += command[10] + ' [인원] [금액]\n'     #!분배
@@ -2230,7 +2236,7 @@ while True:
 			################ 명존쎄 ################ 
 
 			if message.content == command[7]:
-				await client.get_channel(channel).send( '< 명치의 아픔을 알리지 마라.. >', tts=False)
+				await client.get_channel(channel).send( '< 역시 날 컨트롤 하는건 달콤양 뿐인가 >', tts=False)
 				for i in range(bossNum):
 					if bossMungFlag[i] == True:
 						bossTimeString[i] = tmp_bossTime[i].strftime('%H:%M:%S')
@@ -2239,7 +2245,7 @@ while True:
 						bossFlag0[i] = False
 						bossMungFlag[i] = False					
 				await dbSave()
-				print("명치!")
+				print("달콤!")
 				await voice_client1.disconnect()
 				#client.clear()
 				raise SystemExit
