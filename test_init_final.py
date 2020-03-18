@@ -1478,19 +1478,19 @@ while True:
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!명치' :
 				embed = discord.Embed(
-					title = '< 꼭 그렇게 다 때려야만 했냐!! ',
+					title = '< 꼭 그렇게 때려야 속이 후련했냐!! > ',
 					color=0xff00ff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!정강이' :
 				embed = discord.Embed(
-					title = '< 와.. 여기까지 걷어찰줄이야 >
+					title = '< 와.. 여기까지 걷어찰줄이야 >'
 					color=000000
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
 			if message.content == '!힘내' :
 				embed = discord.Embed(
-					title = '< 고마워 병주고 약이라도 줘서~ >
+					title = '< 고마워 병주고 약이라도 줘서~ >'
 					color=a4ffff
 					)
 				await client.get_channel(channel).send( embed=embed, tts=False)
